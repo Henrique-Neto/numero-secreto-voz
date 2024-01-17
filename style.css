@@ -5,6 +5,8 @@
     --font-family: 'Montserrat', sans-serif;
     --cor-de-fundo: #222831;
     --cor-primaria: #00ADB5;
+    --cor-game-over:#FF1E1E;
+    --cor-font-game-over:#00FFD1;
 }
 
 body {
@@ -53,4 +55,8 @@ h3 {
     background-color: var(--cor-primaria);
     border-radius: 5px;
     margin-top: 20px;
+}
+
+.game-over{
+    color: white;
 }

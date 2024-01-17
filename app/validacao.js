@@ -1,11 +1,19 @@
 function verificaChuteValido(chute) {
     const numero = +chute;   //+chute converte para inteiro
 
+    if(chute == 'game over'){
+        console.log('GAME OVER')
+        document.body.innerHTML = `<h1 class='game-over'> GAME OVER </h1>`
+        document.body.style.setProperty("--cor-de-fundo", "red")
+        return
+    }
+
     if (chuteInvalido(numero)) {
         console.log('valor inválido');
         elementoChute.innerHTML += '<div>Valor Inválido</div>'
         return
     }
+
 
     if (numeroRangeOut(numero)) {
         elementoChute.innerHTML += (` <div> Valor inválido: O número precisa estar entre ${menorValor} e ${maiorValor} </div>`);
